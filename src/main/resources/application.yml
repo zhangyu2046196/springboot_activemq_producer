@@ -1,0 +1,17 @@
+server:
+  port: 7002       #配置微服务端口号
+
+spring:
+  activemq:
+    broker-url: tcp://192.168.1.18:61616      #配置ActiveMQ地址
+    user: admin    #配置用户名
+    password: admin    #配置密码
+  jms:
+    pub-sub-domain: true      #false代表目的地是队列  true代表目的地是topic
+
+#自定义队列名
+myqueue: boot_mq_queue
+
+
+#自定义主题
+mytopic: boot_mq_topic
